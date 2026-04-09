@@ -114,6 +114,8 @@ print(cosine_similarity(text_emb[0], image_emb[1]))
 
 print(cosine_similarity(text_emb[1], image_emb[0]))
 print(cosine_similarity(text_emb[1], image_emb[1]))
+#cosine similarity between 2 images
+print(cosine_similarity(image_emb[0], image_emb[1]))
 
 combined_emb = np.concatenate([text_emb, image_emb], axis=1)
 combined_emb = combined_emb / np.linalg.norm(combined_emb, axis=1, keepdims=True)
